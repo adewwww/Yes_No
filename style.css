@@ -42,3 +42,26 @@
     border-radius: 66px;
     box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
   }
+
+  .photo-collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.photo-collage img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+  
+  .photo-collage img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
+  
+  
